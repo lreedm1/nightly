@@ -19,7 +19,7 @@ ask about retainer!
 
 habit checklist"""
 
-File_object = "/users/reed/documents/Nightly/nightly.csv"
+File_object = "./nightly.csv"
 
 
 def get_input(question, color):
@@ -69,17 +69,20 @@ def get_cell(infilepath, row, col):
         reader = csv.reader(infile, dialect ='excel')
        
 
+def main():
+    with open(File_object, 'a') as f:
+        writer = csv.writer(f, dialect ='excel')
+        os.system('clear')
+        last_night =  get_cell(File_object, -1,-1)
+        answers = questions(last_night)
 
-with open(File_object, 'a') as f:
-    writer = csv.writer(f, dialect ='excel')
-    os.system('clear')
-    last_night =  get_cell(File_object, -1,-1)
-    answers = questions(last_night)
+        time = datetime.datetime.now()
+        today = [time.minute, time.hour, time.day, time.month, time.year]
+        readable = [ctime()]
 
-    time = datetime.datetime.now()
-    today = [time.minute, time.hour, time.day, time.month, time.year]
-    readable = [ctime()]
+        writer.writerow(readable + today + answers)
 
-    writer.writerow(readable + today + answers)
+    print("\n\n\n", ctime())
 
-print("\n\n\n", ctime())
+if __name__ == "__main__":
+    main()

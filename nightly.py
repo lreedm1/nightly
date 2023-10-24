@@ -31,13 +31,15 @@ def questions(last_night_goals):
     return([
             get_input("When and why did you not keep your word?", "magenta"),
             get_input("Why are you pissed and will it matter when you die?", "red"),
-            get_input("What would you accomplish if you couldn't fail?", "cyan"),
+            get_input("What are you missing?", "cyan"),
             get_input("Tell me 3 things from today you are greatful for", "green"),
             get_input("Good or bad day? 0-1", "magenta"),
             ])
 
 '''
 PREVIOUS QUESTIONS
+get_input("What would you do if you couldn't fail?", "cyan"),
+get_input("What would you accomplish if you couldn't fail?", "cyan"),
 get_input("When and why did you not keep your word to yourself or others?", "magenta"),
 get_input("Biggest failure today and what caused it", "magenta"),
 get_input("Be a kid and write down a fucking dream (optional: risk and reward)", "cyan"),

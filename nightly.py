@@ -19,7 +19,7 @@ ask about retainer!
 
 habit checklist"""
 
-File_object = "./nightly.csv"
+File_object = "/Users/reed/Library/Mobile Documents/com~apple~CloudDocs/nightly.csv"
 
 
 def get_input(question, color):
@@ -29,15 +29,17 @@ def get_input(question, color):
 
 def questions(last_night_goals):
     return([
-            get_input("When and why did you not keep your word?", "magenta"),
-            get_input("Why are you pissed and will it matter when you die?", "red"),
+            get_input("How were you useful to others?", "magenta"),
             get_input("What are you missing?", "cyan"),
             get_input("Tell me 3 things from today you are greatful for", "green"),
-            get_input("Good or bad day? 0-1", "magenta"),
+            get_input("Document day in life goal for partnership, friendship, and wealth")
             ])
 
 '''
 PREVIOUS QUESTIONS
+get_input("Good or bad day? 0-1", "magenta"),
+get_input("When and why did you not keep your word?", "magenta"),
+get_input("Why are you pissed and will it matter when you die?", "red"),
 get_input("What would you do if you couldn't fail?", "cyan"),
 get_input("What would you accomplish if you couldn't fail?", "cyan"),
 get_input("When and why did you not keep your word to yourself or others?", "magenta"),

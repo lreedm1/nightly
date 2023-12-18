@@ -29,10 +29,10 @@ def get_input(question, color):
 
 def questions(last_night_goals):
     return([
-            get_input("What did you learn in RandoWiki?", "green")
+            get_input("What did you learn in RandoWiki?", "green"),
             get_input("How were you useful to others?", "magenta"),
             get_input("What are you missing?", "cyan"),
-            get_input("Tell me 3 things from today you are greatful for", "green"),
+            get_input("Tell me 3 things from today you are greatful for", "green")
             ])
 
 '''

@@ -78,7 +78,7 @@ def main():
     with open(File_object, 'a') as f:
         writer = csv.writer(f, dialect ='excel')
         os.system('clear')
-        os.system("python3 '/Users/reed/Documents/Nightly Code/nightly.py'")
+        os.system("open -a Safari  https://en.wikipedia.org/wiki/Special:Random")
         last_night =  get_cell(File_object, -1,-1)
         answers = questions(last_night)
 

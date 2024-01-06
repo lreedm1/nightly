@@ -78,6 +78,7 @@ def main():
     with open(File_object, 'a') as f:
         writer = csv.writer(f, dialect ='excel')
         os.system('clear')
+        os.system("python3 '/Users/reed/Documents/Nightly Code/nightly.py'")
         last_night =  get_cell(File_object, -1,-1)
         answers = questions(last_night)
 
@@ -87,7 +88,6 @@ def main():
 
         writer.writerow(readable + today + answers)
 
-    print("\n\n\n", ctime())
 
 if __name__ == "__main__":
     main()
